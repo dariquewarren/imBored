@@ -1,0 +1,14 @@
+.dutch-tip-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+}
+.tip-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: red;
+}

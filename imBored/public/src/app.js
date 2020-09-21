@@ -45,6 +45,11 @@ app.get('/supes',(req, res )=>{
      res.render('supes', {layout: 'supes'})
 })
 
+app.get('/tips',(req, res )=>{
+    // res.send('helloooooooooo')
+    //  res.sendFile(viewsPath + '/main.hbs' )
+     res.render('tipCalculator', {layout: 'tipCalculator'})
+})
 
 var ddw = moment().format('h:mm:ss a');
 app.listen(port, ()=>{
