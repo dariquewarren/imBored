@@ -2,13 +2,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-items: normal;
+  background-color: #343a40!important;
+
+    color: white;
+}
+.dutch-tip-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: normal;
     background-color: black;
+    color: white;
 }
 .tip-form-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background-color: red;
+    color: white;
+    background-color: #343a40!important;
+}
+.tip-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    color: white;
+  
+}
+
+.dictonary-definitions-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: normal;
+  background-color: #343a40!important;
+
+    color: white;
 }

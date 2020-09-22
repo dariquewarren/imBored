@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="text-center bg-secondary">  
+<body class="text-center bg-dark text-success">  
 <h3>
 <form class="form" action="">
        <input class="text-center bg-light white w-50" type="text" name=""  placeholder="Type Antonyms Here" id="antonymSearchInput">
@@ -16,17 +16,38 @@
        <button class="button btn-primary w-50" id="synonymSearch"> SEARCH Synonyms</button>
    </form>
    
-<div class="container w-25" id="definitionsDiv">
-    <h3 class="bg-dark text-light " id="definitionsHeader">...</h3>
+
+
+
+<div class="dictonary-definitions-container">
+<div id="definitionsDiv" class="card bg-danger justify-center" style="width: 18rem;">
+  <div class="card-body">
+    <h3 class="bg-dark text-light" style="width: 15rem;" id="definitionsHeader">...</h3>
     <ol id="definitionsList">
         
     </ol>
-</div> 
-<div class="container w-25" id="resultsDiv">
-        <h3 class="bg-success text-light " id="resultsHeader">...</h3>
+    </div>
+</div>
+</div>
+
+<div class="dictonary-definitions-container">
+<div id="resultsDiv" class="card " style="width: 18rem;">
+  <div class="card-body">
+    <h3 class="bg-dark text-light justify-left " style="width: 15rem;" id="resultsHeader">...</h3>
     <ol id="resultsList">
     </ol>
+    </div>
 </div>
+
+</div>
+
+
+
+
+
+
+
+
 
 </h3>
    

@@ -104,6 +104,7 @@ var justMyBillTip = (bill, tip)=>{
 
 tipForm.addEventListener('submit', (e)=>{
     e.preventDefault()
+    dutchResults.innerHTML=''
     var tipInfo = {
         bill: billInput.value,
         tip: tipInput.value ,
@@ -126,32 +127,31 @@ dutchResultsTitle.innerHTML = 'Dutch Tips Info'
 
 
 const individualBillsAfterTipDiv = document.createElement('div')
- individualBillsAfterTipDiv.innerHTML = `<h3 class="text-warning bg-dark" >
- Individual Bills After Tip <br>
- <h4 class="bg-dark text-success">
- $${actualIndividualBillAfterTip.toFixed(2)}</h4> </h3>`
+ individualBillsAfterTipDiv.innerHTML = `<h4 class="text-success bg-dark" >
+<p class='text-light'>Individual Total:</p>  $${actualIndividualBillAfterTip.toFixed(2)}
+  </h4>`
 
 const individualTipDiv = document.createElement('div')
-individualTipDiv.innerHTML = `<h3 class="text-warning bg-dark"> 
-Individual Tip: $${actualIndividualTip.toFixed(2)}</h3>
+individualTipDiv.innerHTML = `<h4 class="text-success bg-dark"> 
+<p class='text-light'>Individual Tip:</p> $${actualIndividualTip.toFixed(2)}</h4>
 `
 
 const individualBillDiv = document.createElement('div')
-individualBillDiv.innerHTML = `<h3 class="text-warning bg-dark"> 
-Individual Bill: $${actualIndividualBill.toFixed(2)}</h3>
+individualBillDiv.innerHTML = `<h4 class="text-success bg-dark"> 
+<p class='text-light'>Individual Bill:</p> $${actualIndividualBill.toFixed(2)}</h4>
 `
 
 
 const totalTipDiv = document.createElement('div')
 totalTipDiv.innerHTML = `
-<h4 class="text-warning bg-dark">
-Total Tip: $${actualBillTip.toFixed(2)} </h4>
+<h4 class="text-success bg-dark">
+<p class='text-light'>Total Tip: </p>$${actualBillTip.toFixed(2)} </h4>
 `
 
 const totalBillAfterTipDiv = document.createElement('div')
 totalBillAfterTipDiv.innerHTML = `
-<h4 class="bg-dark text-warning">
-Total Bill After Tip: $${actualTotalBillAfterTip.toFixed(2)} </h4>
+<h4 class="bg-dark text-success">
+<p class='text-light'>Total Bill After Tip:</p> $${actualTotalBillAfterTip.toFixed(2)} </h4>
 `
 
 
@@ -168,7 +168,7 @@ dutchResults.appendChild(totalBillAfterTipDiv)
 
 tipForm2.addEventListener('submit', (e)=>{
   e.preventDefault()
-  
+  frugalResults.innerHTML=''
     var tipInfo = {
         bill: billInput2.value,
         tip: tipInput2.value
@@ -187,13 +187,13 @@ tipForm2.addEventListener('submit', (e)=>{
     
     const totalBillDiv = document.createElement('div')
     totalBillDiv.innerHTML = `
-    <h4 class=" bg-dark text-warning">
-    Total Bill: $${actualTotalBillAfterTip} </h4>
+    <h4 class=" bg-dark text-success">
+    <p class='text-light'>Total Bill:</p> $${actualTotalBillAfterTip} </h4>
     `
     const tipDiv = document.createElement('div')
     tipDiv.innerHTML = `
     <h4 class="bg-dark text-success">
-    Tip: $${actualBillTip}
+    <p class='text-light'>Tip:</p> $${actualBillTip.toFixed(2)}
     </h4>
     `
 
