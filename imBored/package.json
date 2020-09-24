@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon public/src/app.js"
     
-  },
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",

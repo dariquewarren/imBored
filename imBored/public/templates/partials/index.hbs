@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body class="text-center bg-dark text-success">  
-<h3>
-<form class="form" action="">
-       <input class="text-center bg-light white w-50" type="text" name=""  placeholder="Type Antonyms Here" id="antonymSearchInput">
+<body class="bg-dark text-center">  
+
+
+   <div >
+<form class="dictionary-form" action="">
+       <input class="text-center border-danger border-5rem bg-secondary bg-light w-50" type="text" name=""  placeholder="Type Antonyms Here" id="antonymSearchInput">
        <button class="button btn-danger w-50" id="antonymSearch"> SEARCH Antonyms</button>
-   </form>
-   <form class="form border-primary py-4" action="">
-       <input class="text-center border-primary border-10px bg-secondary bg-light w-50" type="text" name="" placeholder="Type Synonyms Here" id="synonymSearchInput">
+       
+       <input class="text-center border-primary border-5rem bg-secondary bg-light w-50" type="text" name="" placeholder="Type Synonyms Here" id="synonymSearchInput">
        <button class="button btn-primary w-50" id="synonymSearch"> SEARCH Synonyms</button>
+  
    </form>
-   
+  
+   </div>
 
 
 
-<div class="dictonary-definitions-container">
-<div id="definitionsDiv" class="card bg-danger justify-center" style="width: 18rem;">
+<div class="dictonary-definitions-container" >
+<div id="definitionsDiv" class="card bg-dark justify-center" style="width: 18rem;">
   <div class="card-body">
     <h3 class="bg-dark text-light" style="width: 15rem;" id="definitionsHeader">...</h3>
     <ol id="definitionsList">
@@ -30,8 +33,8 @@
 </div>
 </div>
 
-<div class="dictonary-definitions-container">
-<div id="resultsDiv" class="card " style="width: 18rem;">
+<div class="dictonary-definitions-container" >
+<div id="resultsDiv" class="card bg-dark" style="width: 18rem;">
   <div class="card-body">
     <h3 class="bg-dark text-light justify-left " style="width: 15rem;" id="resultsHeader">...</h3>
     <ol id="resultsList">
@@ -49,7 +52,7 @@
 
 
 
-</h3>
+
    
 </body>
 </html>

@@ -42,3 +42,22 @@
 
     color: white;
 }
+.dictonary-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: normal;
+  background-color: #343a40!important;
+
+    color: white;
+}
+
+.dictonary-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: normal;
+  background-color: #343a40!important;
+
+    color: white;
+}

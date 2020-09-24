@@ -45,6 +45,7 @@ var allSynonyms = (word)=>{
             for(i;i<synonyms.length;i++){
              synonyms[i].forEach((element)=>{
                  var li = document.createElement('li')
+                 li.setAttribute('class', 'bg-dark text-success')
                  li.innerHTML=`${element}`
                  resultsList.appendChild(li)
              })
@@ -53,8 +54,8 @@ var allSynonyms = (word)=>{
          
             shortDefs.forEach((element)=>{
                 var newli = document.createElement('newli')
+                newli.setAttribute('class', 'bg-dark text-success')
                 newli.innerHTML=`${element} <br>`
-                newli.setAttribute('class', 'bg-secondary text-dark')
                 definitionsList.appendChild(newli)
             }) 
             // console.log(ddw[0].element.meta.ants[0][0])
@@ -99,6 +100,7 @@ var allAntonyms = (word)=>{
 
            shortDefs.forEach((element)=>{
             var newli = document.createElement('li')
+            newli.setAttribute('class', 'bg-dark text-success')
             newli.innerHTML=`${element} <br>`
             definitionsList.appendChild(newli)
         })
